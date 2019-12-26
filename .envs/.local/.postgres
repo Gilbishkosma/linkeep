@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=linkkeep
+POSTGRES_USER=haMTBYyZqZUyxiJvpqGoEzjTWyCiIzlT
+POSTGRES_PASSWORD=pSkt0Ckr9zUOBk55WS3JsFd9CP5gdRbbf8HuD7j90GqBKlmabraTpmd9LcznpcPJ
