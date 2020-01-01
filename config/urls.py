@@ -14,6 +14,7 @@ urlpatterns = [
     path(settings.ADMIN_URL, admin.site.urls),
     # User management
     path("users/", include("linkkeep.users.urls", namespace="users")),
+    path("accounts/", include("allauth.urls")),
     path("rest-auth/", include('rest_auth.urls')),
     # Your stuff: custom urls includes go here
     path("api/",include('linkkeep.api.urls'))

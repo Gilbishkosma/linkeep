@@ -9,3 +9,8 @@ from linkkeep.api.serializers import LinkDataSerializer
 class LinkDataReadCreate(viewsets.ModelViewSet):
 	queryset = LinkData.objects.all()
 	serializer_class = LinkDataSerializer
+
+	def get_queryset(self):
+		queryset = self.queryset
+		user = self.request.user
+		return queryset.filter(user=user)

@@ -17,7 +17,11 @@ class LinkDataSerializer(serializers.ModelSerializer):
 
 	def create(self,validated_data):
 		category_data = validated_data.pop("category")
+		validated_data['user'] = self.context['request'].user 
 		category_instance = LinkCategory.objects.create(**category_data)
 		link_data = LinkData.objects.create(**validated_data)
 		link_data.category = category_instance
+		link_data.save()
 		return link_data
+
+		
