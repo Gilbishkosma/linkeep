@@ -17,3 +17,7 @@ django-redis==4.11.0  # https://github.com/niwinz/django-redis
 djangorestframework==3.11.0  # https://github.com/encode/django-rest-framework
 django-rest-auth==0.9.5   # https://github.com/Tivix/django-rest-auth
 coreapi==2.3.3  # https://github.com/core-api/python-client
+
+
+#DJANGO CORS
+django-cors-headers==3.2.1 #https://pypi.org/project/django-cors-headers/
